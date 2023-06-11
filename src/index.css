@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 50px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +10,135 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.dropdown-text {
+  margin: 0;
+  color: #242527;
+  cursor: pointer !important;
+  width: 330px;
+}
+.desc_wrapper {
+  max-width: 330px;
+}
+
+.dropdown {
+  position: relative;
+  width: 330px;
+  height: 54px; 
+  background: #f7f7f8;
+  display: flex;
+  align-items: center;
+  padding: 0 10px; 
+}
+.dropdown-field {
+  border: none !important;
+  background: #f7f7f8 !important;
+  font-size: 16px;
+  width: 194px;
+  color: #242527;
+  /* cursor: pointer; */
+}
+.dropdown-field-real {
+  border: none !important;
+  background: #f7f7f8 !important;
+  font-size: 16px;
+  width: 194px;
+  color: #242527;
+  cursor: pointer; 
+}
+.dropdown-icon {
+  transition: transform 0.5s;
+}
+.dropdown-icon {
+  position: absolute;
+  top: 22px;
+  right: 18px;
+  width: 13px;
+}
+
+
+.dropdown-icon-real {
+  transition: transform 0.5s;
+}
+
+.dropdown-icon-real.rotated {
+  transform: rotate(-180deg);
+}
+
+.dropdown-icon-real.reverse-rotation {
+  transition-delay: 0.5s;
+  transform: rotate(0deg);
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #ffffff;
+  /* border: 1px solid #DDDDDD; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-height: 250px;
+  margin-top: 5px;
+  color: #242527;
+  cursor: pointer !important;
+}
+.dropdown-content li {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #242527;
+}
+.dropdown.active .dropdown-content {
+  display: block;
+}
+.dropdown.active .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+
+
+.block {
+  position: absolute;
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-color: darkgray;
+}
+.active {
+  display: block;
+}
+.activ {
+  display: block;
+}
+button {
+  margin-right: 30px;
+}
+.block-icon {
+  margin-top: 30px;
+    position: absolute;
+    top: 150px;
+   cursor: pointer;
+    width: 51px;
+    height: 50px;
+    background-image: url(./Frame.svg);
+}
+.block-icon {
+  transition: transform 0.5s;
+}
+
+.block-icon.rotated {
+  transform: rotate(-180deg);
+}
+
+.block-icon.reverse-rotation {
+  transition-delay: 0.5s;
+  transform: rotate(0deg);
+}
+h2 {
+  margin: 10px 20px;
+}
+label {
+  margin-left: 20px;
 }
